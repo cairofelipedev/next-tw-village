@@ -7,9 +7,13 @@ module.exports = {
   },
   content: [
     './pages/**/*.js',
+    './pages/**/*.jsx',
     './components/**/*.js',
+    './components/**/*.jsx',
     './layouts/**/*.js',
+    './layouts/**/*.jsx',
     './lib/**/*.js',
+    './lib/**/*.jsx',
     './data/**/*.mdx',
   ],
   darkMode: 'class',
