@@ -8,6 +8,7 @@ import formatDate from '@/lib/utils/formatDate'
 import NewsletterForm from '@/components/NewsletterForm'
 import CarouselBanners from '@/components/CarouselBanners'
 import ButtonModal from '@/components/ButtonModal'
+import Image from 'next/image'
 
 const MAX_DISPLAY = 5
 
@@ -22,12 +23,17 @@ export default function Home({ posts }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <CarouselBanners />
-      <div className="grid grid-cols-2 gap-4 p-10">
+      <div className="gap-4 p-6 md:grid md:grid-cols-2 md:p-10">
         <div>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">Seja bem vindo ao</p>
+          <p className="text-lg font-extrabold leading-7 text-white dark:text-gray-900">
+            Seja bem vindo ao
+          </p>
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Residencial Cajueiro
           </h1>
+          <div className="pt-4">
+            <Image src="/static/images/img70.jpg" alt="avatar" width="600px" height="300px" />
+          </div>
         </div>
         <div>
           <ButtonModal />

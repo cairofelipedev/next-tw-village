@@ -138,3 +138,11 @@
 .token.table {
   display: inline;
 }
+
+.icon-button {
+  z-index: 0;
+}
+
+#backdrop {
+  z-index: 1;
+}
