@@ -25,14 +25,20 @@ export default function Home({ posts }) {
       <CarouselBanners />
       <div className="gap-4 p-6 md:grid md:grid-cols-2 md:p-10">
         <div>
-          <p className="text-lg font-extrabold leading-7 text-white dark:text-gray-900">
-            Seja bem vindo ao
-          </p>
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          <h1 className="text-center text-3xl font-extrabold leading-9 tracking-tight text-orange-500 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Residencial Cajueiro
           </h1>
+          <p className="pt-4 text-center text-2xl font-semibold leading-7 text-gray-800 dark:text-white">
+            Projetado para você morar bem com qualidade de vida, seja bem vindo ao
+          </p>
           <div className="pt-4">
-            <Image src="/static/images/img70.jpg" alt="avatar" width="600px" height="300px" />
+            <Image
+              className="rounded"
+              src="/static/images/img70.jpg"
+              alt="avatar"
+              width="600px"
+              height="300px"
+            />
           </div>
         </div>
         <div>

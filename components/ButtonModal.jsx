@@ -18,18 +18,50 @@ export default function ButtonModal() {
           alt="Vercel Logo"
         />
         <h1 className="pb-4 font-extrabold">Segurança</h1>
-        <h5>Saiba Mais</h5>
+        <div className="flex items-center justify-center">
+          <h5>Saiba Mais</h5>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            className="bi bi-arrow-right-short text-orange-500"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fillRule="evenodd"
+              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+          </svg>
+        </div>
       </button>
       <CustomModal visible={showModal} onClose={() => setShowModal(false)}>
-        <div className="w-96 rounded bg-white p-5">
-          <h1 className="text-2xl font-bold text-blue-500">Subscribe for our newsletter</h1>
-          <p className="py-1 text-gray-500"></p>
-          <input
-            placeholder="example@email.com"
-            type="email"
-            className="mt-2 w-full rounded border border-gray-500 p-1"
+        <div className="w-96 rounded bg-black p-5 md:w-1/2">
+          <h1 className="text-center text-2xl font-bold text-white">Segurança</h1>
+          <h2 className="py-4 text-center text-xl text-white">
+            Viver com segurança aqui no Residencial Village Cajueiro
+          </h2>
+          <ul className="list-disc pl-4">
+            <li className="text-orange-500">
+              <p className="py-1 text-white">Muro de Contorno</p>
+            </li>
+            <li className="text-orange-500">
+              <p className="py-1 text-white">Instalação de Cerca Elétrica sobre o Muro</p>
+            </li>
+            <li className="text-orange-500">
+              <p className="py-1 text-white">Sistema de Vigilância com Monitoramento</p>
+            </li>
+            <li className="text-orange-500">
+              <p className="py-1 text-white">Guaritas Social e de Serviço</p>
+            </li>
+          </ul>
+          <Image
+            className="rounded"
+            src="/static/images/img68.jpg"
+            alt="avatar"
+            width="600px"
+            height="300px"
           />
-          <button className="mt-2 bg-blue-500 py-2 px-5 text-white">Subscribe</button>
         </div>
       </CustomModal>
     </>
