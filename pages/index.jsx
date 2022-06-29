@@ -8,6 +8,9 @@ import formatDate from '@/lib/utils/formatDate'
 import NewsletterForm from '@/components/NewsletterForm'
 import CarouselBanners from '@/components/CarouselBanners'
 import ButtonModal from '@/components/ButtonModal'
+import ButtonModal2 from '@/components/ButtonModal2'
+import ButtonModal3 from '@/components/ButtonModal3'
+import ButtonModal4 from '@/components/ButtonModal4'
 import Image from 'next/image'
 
 const MAX_DISPLAY = 5
@@ -43,9 +46,9 @@ export default function Home({ posts }) {
         </div>
         <div>
           <ButtonModal />
-          <ButtonModal />
-          <ButtonModal />
-          <ButtonModal />
+          <ButtonModal2 />
+          <ButtonModal3 />
+          <ButtonModal4 />
           <ButtonModal />
           <ButtonModal />
         </div>
