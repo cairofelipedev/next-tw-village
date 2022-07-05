@@ -3,15 +3,14 @@ import headerNavLinks from '@/data/headerNavLinks'
 import Image from 'next/image'
 import Link from './Link'
 import SectionContainer from './SectionContainer'
-import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 
 const LayoutWrapper = ({ children }) => {
   return (
     <div className="flex h-screen flex-col justify-between">
-      <header className="flex items-center justify-between bg-black py-2 md:py-5">
-        <div className="flex max-w-6xl justify-between px-2 pt-4 sm:mx-auto">
+      <header className="flex items-center justify-between bg-black py-2 md:py-3">
+        <div className="px-2 pt-4 md:ml-10">
           <Link href="/" aria-label={siteMetadata.headerTitle}>
             <div className="flex items-center justify-between">
               <div className="mr-3">
@@ -170,7 +169,6 @@ const LayoutWrapper = ({ children }) => {
         </div>
       </header>
       <main className="mb-auto">{children}</main>
-      <Footer />
     </div>
   )
 }

@@ -57,10 +57,10 @@ export default function ButtonModal() {
           </ul>
           <Image
             className="rounded"
-            src="/static/images/img68.jpg"
+            src="/static/images/img67.jpg"
             alt="avatar"
-            width="600px"
-            height="300px"
+            width="700px"
+            height="350px"
           />
         </div>
       </CustomModal>

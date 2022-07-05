@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import CustomModal from '@/components/CustomModal'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function ButtonModal() {
   const [showModal, setShowModal] = useState(false)
@@ -14,10 +15,10 @@ export default function ButtonModal() {
           className="icon-button"
           width={50}
           height={50}
-          src="/static/images/eventos.png"
+          src="/static/images/loc2.png"
           alt="Vercel Logo"
         />
-        <h1 className="pb-4 font-extrabold">Eventos</h1>
+        <h1 className="pb-4 font-extrabold">Localização</h1>
         <div className="flex items-center justify-center">
           <h5>Saiba Mais</h5>
           <svg
@@ -37,28 +38,19 @@ export default function ButtonModal() {
       </button>
       <CustomModal visible={showModal} onClose={() => setShowModal(false)}>
         <div className="w-96 rounded bg-black p-5 md:w-1/2">
-          <h1 className="text-center text-2xl font-bold text-white">Eventos</h1>
+          <h1 className="text-center text-2xl font-bold text-white">Localização</h1>
           <h2 className="py-4 text-center text-xl text-white">
-            Salão e salas para qualquer evento e festa
+            BR 226, KM3, nº 4555, Bairro Jóia Timon - MA CEP 65638-899{' '}
           </h2>
-          <ul className="list-disc pl-4">
-            <li className="text-orange-500">
-              <p className="py-1 text-white">Salão de Festa e Eventos para 200 Pessoas</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">2 Salas para Pequenas Festas</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">Áreas de Estacionamento para Eventos e Festas</p>
-            </li>
-          </ul>
-          <Image
-            className="rounded"
-            src="/static/images/eventos-espaco.png"
-            alt="avatar"
-            width="700px"
-            height="350px"
-          />
+          <Link href="https://goo.gl/maps/oewXwKAJ93vfRxrv7">
+            <Image
+              className="rounded"
+              src="/static/images/maps.png"
+              alt="avatar"
+              width="700px"
+              height="500px"
+            />
+          </Link>
         </div>
       </CustomModal>
     </>

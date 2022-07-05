@@ -14,10 +14,10 @@ export default function ButtonModal() {
           className="icon-button"
           width={50}
           height={50}
-          src="/static/images/eventos.png"
+          src="/static/images/casa.png"
           alt="Vercel Logo"
         />
-        <h1 className="pb-4 font-extrabold">Eventos</h1>
+        <h1 className="pb-4 font-extrabold">Saúde e Bem Estar</h1>
         <div className="flex items-center justify-center">
           <h5>Saiba Mais</h5>
           <svg
@@ -37,24 +37,24 @@ export default function ButtonModal() {
       </button>
       <CustomModal visible={showModal} onClose={() => setShowModal(false)}>
         <div className="w-96 rounded bg-black p-5 md:w-1/2">
-          <h1 className="text-center text-2xl font-bold text-white">Eventos</h1>
+          <h1 className="text-center text-2xl font-bold text-white">Saúde e bem Estar</h1>
           <h2 className="py-4 text-center text-xl text-white">
-            Salão e salas para qualquer evento e festa
+            Cuida de seu corpo e de sua saúde com nossos serviços
           </h2>
           <ul className="list-disc pl-4">
             <li className="text-orange-500">
-              <p className="py-1 text-white">Salão de Festa e Eventos para 200 Pessoas</p>
+              <p className="py-1 text-white">Academia</p>
             </li>
             <li className="text-orange-500">
-              <p className="py-1 text-white">2 Salas para Pequenas Festas</p>
+              <p className="py-1 text-white">Clínica de Estética</p>
             </li>
             <li className="text-orange-500">
-              <p className="py-1 text-white">Áreas de Estacionamento para Eventos e Festas</p>
+              <p className="py-1 text-white">Fisioterapia</p>
             </li>
           </ul>
           <Image
             className="rounded"
-            src="/static/images/eventos-espaco.png"
+            src="/static/images/saude-bem-estar.png"
             alt="avatar"
             width="700px"
             height="350px"

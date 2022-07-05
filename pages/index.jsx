@@ -1,25 +1,14 @@
-import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
-import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
-import formatDate from '@/lib/utils/formatDate'
-
-import NewsletterForm from '@/components/NewsletterForm'
+import Footer from '@/components/Footer'
 import CarouselBanners from '@/components/CarouselBanners'
 import ButtonModal from '@/components/ButtonModal'
 import ButtonModal2 from '@/components/ButtonModal2'
 import ButtonModal3 from '@/components/ButtonModal3'
 import ButtonModal4 from '@/components/ButtonModal4'
+import ButtonModal5 from '@/components/ButtonModal5'
+import ButtonModal6 from '@/components/ButtonModal6'
 import Image from 'next/image'
-
-const MAX_DISPLAY = 5
-
-export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog')
-
-  return { props: { posts } }
-}
 
 export default function Home({ posts }) {
   return (
@@ -28,105 +17,228 @@ export default function Home({ posts }) {
       <CarouselBanners />
       <div className="gap-4 p-6 md:grid md:grid-cols-2 md:p-10">
         <div>
-          <h1 className="text-center text-3xl font-extrabold leading-9 tracking-tight text-orange-500 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          <h1 className="text-center text-3xl font-extrabold leading-9 tracking-tight text-orange-500 sm:text-4xl sm:leading-10 md:text-left">
             Residencial Cajueiro
           </h1>
-          <p className="pt-4 text-center text-2xl font-semibold leading-7 text-gray-800 dark:text-white">
-            Projetado para você morar bem com qualidade de vida, seja bem vindo ao
+          <p className="pt-4 text-2xl font-semibold leading-7 text-white dark:text-gray-800">
+            Projetado para você morar bem com qualidade de vida.
           </p>
           <div className="pt-4">
             <Image
               className="rounded"
               src="/static/images/img70.jpg"
               alt="avatar"
-              width="600px"
+              width="750px"
               height="300px"
             />
           </div>
+          <h1 className="text-center text-3xl font-bold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-2xl md:leading-14">
+            LIGUE AGORA: (86) 988562017
+          </h1>
+          <div className="container mt-2">
+            <div>
+              <div className="mb-6 rounded bg-black p-4 px-4 shadow-lg md:p-8">
+                <div className="grid grid-cols-1 gap-4 gap-y-2 text-sm lg:grid-cols-3">
+                  <div className="flex flex-col items-center justify-center text-white">
+                    <Image
+                      className="icon-button"
+                      width={50}
+                      height={70}
+                      src="/static/images/assistant.png"
+                      alt="Vercel Logo"
+                    />
+                    <p className="text-center text-lg font-medium">NÓS LIGAMOS</p>
+                    <p className="text-center text-2xl font-medium">PRA VOCÊ</p>
+                  </div>
+
+                  <div className="lg:col-span-2">
+                    <div className="grid grid-cols-1 gap-4 gap-y-2 text-sm md:grid-cols-5">
+                      <div className="md:col-span-5">
+                        <input
+                          type="text"
+                          name="email"
+                          id="email"
+                          className="mt-1 h-10 w-full rounded border bg-gray-50"
+                          value=""
+                          placeholder="SEU NOME"
+                        />
+                        <input
+                          type="text"
+                          name="email"
+                          id="email"
+                          className="mt-2 h-10 w-full rounded border bg-gray-50 px-4"
+                          value=""
+                          placeholder="SEU NÚMERO"
+                        />
+                      </div>
+                      <div className="md:col-span-5">
+                        <div className="">
+                          <button className="w-full rounded bg-orange-500 py-2 px-4 font-bold text-white hover:bg-orange-700">
+                            Enviar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
+        <div className="md:ml-5">
           <ButtonModal />
           <ButtonModal2 />
           <ButtonModal3 />
           <ButtonModal4 />
-          <ButtonModal />
-          <ButtonModal />
+          <ButtonModal5 />
+          <ButtonModal6 />
         </div>
       </div>
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
-          </p>
+      <div>
+        <h1 className="text-center text-2xl font-medium">
+          As melhores condições e vantagens de um empreendimento completo de alto padrão.
+        </h1>
+        <div className="gap-4 pt-8 md:grid md:grid-cols-4">
+          <div>
+            <div className="flex flex-col items-center justify-center text-black">
+              <Image
+                className="icon-button"
+                width={100}
+                height={100}
+                src="/static/images/icon-argumento-1.png"
+                alt="Vercel Logo"
+              />
+              <p className="text-center text-lg font-medium text-white dark:text-gray-800">
+                Financiamento
+              </p>
+              <p className="text-center text-2xl font-medium text-white dark:text-gray-800">
+                PRÓPRIO
+              </p>
+            </div>
+          </div>
+          <div>
+            <div className="flex flex-col items-center justify-center text-black">
+              <Image
+                className="icon-button"
+                width={100}
+                height={100}
+                src="/static/images/icon-argumento-2.png"
+                alt="Vercel Logo"
+              />
+              <p className="text-center text-lg font-medium text-white dark:text-gray-800">
+                Prestações
+              </p>
+              <p className="text-center text-2xl font-medium text-white dark:text-gray-800">
+                EM ATÉ 180 MESES
+              </p>
+            </div>
+          </div>
+          <div>
+            <div className="flex flex-col items-center justify-center text-black">
+              <Image
+                className="icon-button"
+                width={100}
+                height={100}
+                src="/static/images/icon-argumento-3.png"
+                alt="Vercel Logo"
+              />
+              <p className="text-center text-lg font-medium text-white dark:text-gray-800">
+                Localização
+              </p>
+              <p className="text-center text-2xl font-medium text-white dark:text-gray-800">
+                PRIVILEGIADA
+              </p>
+            </div>
+          </div>
+          <div>
+            <div className="flex flex-col items-center justify-center text-black">
+              <Image
+                className="icon-button"
+                width={100}
+                height={100}
+                src="/static/images/icon-argumento-4.png"
+                alt="Vercel Logo"
+              />
+              <p className="text-center text-lg font-medium text-white dark:text-gray-800">Ótima</p>
+              <p className="text-center text-2xl font-medium text-white dark:text-gray-800">
+                VALORIZAÇÃO
+              </p>
+            </div>
+          </div>
         </div>
-        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          {!posts.length && 'No posts found.'}
-          {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
-            return (
-              <li key={slug} className="py-12">
-                <article>
-                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
-                    <dl>
-                      <dt className="sr-only">Published on</dt>
-                      <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                        <time dateTime={date}>{formatDate(date)}</time>
-                      </dd>
-                    </dl>
-                    <div className="space-y-5 xl:col-span-3">
-                      <div className="space-y-6">
-                        <div>
-                          <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                            <Link
-                              href={`/blog/${slug}`}
-                              className="text-gray-900 dark:text-gray-100"
-                            >
-                              {title}
-                            </Link>
-                          </h2>
-                          <div className="flex flex-wrap">
-                            {tags.map((tag) => (
-                              <Tag key={tag} text={tag} />
-                            ))}
-                          </div>
-                        </div>
-                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
-                          {summary}
-                        </div>
-                      </div>
-                      <div className="text-base font-medium leading-6">
-                        <Link
-                          href={`/blog/${slug}`}
-                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                          aria-label={`Read "${title}"`}
-                        >
-                          Read more &rarr;
-                        </Link>
-                      </div>
-                    </div>
+      </div>
+      <div className="mx-auto max-w-7xl pt-8">
+        <div className="space-y-2 p-2 pb-2 md:space-y-2">
+          <h1 className="text-center text-3xl font-extrabold leading-9 tracking-tight text-orange-500  dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-3xl md:leading-14">
+            GALERIA DE FOTOS
+          </h1>
+        </div>
+        <section className="body-font">
+          <div className="container mx-auto px-5 py-10">
+            <div className="-m-4 flex flex-wrap">
+              <div className="p-1">
+                <div className="gap-x-4 gap-y-1 md:grid md:grid-cols-6">
+                  <div className="col-span-2">
+                    <Image
+                      className="rounded"
+                      src="/static/images/img67.jpg"
+                      alt="avatar"
+                      width="750px"
+                      height="300px"
+                    />
                   </div>
-                </article>
-              </li>
-            )
-          })}
-        </ul>
+                  <div className="col-span-2">
+                    <Image
+                      className="rounded"
+                      src="/static/images/img66.jpg"
+                      alt="avatar"
+                      width="750px"
+                      height="300px"
+                    />
+                  </div>
+                  <div className="col-span-2">
+                    <Image
+                      className="rounded"
+                      src="/static/images/img64.jpg"
+                      alt="avatar"
+                      width="750px"
+                      height="300px"
+                    />
+                  </div>
+                  <div className="col-span-2">
+                    <Image
+                      className="rounded"
+                      src="/static/images/img64.jpg"
+                      alt="avatar"
+                      width="750px"
+                      height="300px"
+                    />
+                  </div>
+                  <div className="col-span-2">
+                    <Image
+                      className="rounded"
+                      src="/static/images/img70.jpg"
+                      alt="avatar"
+                      width="750px"
+                      height="300px"
+                    />
+                  </div>
+                  <div className="col-span-2">
+                    <Image
+                      className="rounded"
+                      src="/static/images/img66.jpg"
+                      alt="avatar"
+                      width="750px"
+                      height="300px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      {posts.length > MAX_DISPLAY && (
-        <div className="flex justify-end text-base font-medium leading-6">
-          <Link
-            href="/blog"
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label="all posts"
-          >
-            All Posts &rarr;
-          </Link>
-        </div>
-      )}
-      {siteMetadata.newsletter.provider !== '' && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
-      )}
+      <Footer />
     </>
   )
 }

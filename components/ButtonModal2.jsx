@@ -12,9 +12,9 @@ export default function ButtonModal() {
       >
         <Image
           className="icon-button"
-          width={50}
+          width={100}
           height={50}
-          src="/static/images/seguranca.jpg"
+          src="/static/images/lazer2.png"
           alt="Vercel Logo"
         />
         <h1 className="pb-4 font-extrabold">Lazer e Esporte</h1>
@@ -41,59 +41,63 @@ export default function ButtonModal() {
           <h2 className="py-4 text-center text-xl text-white">
             Pratique seus esportes favoritos com segurança e estrutura de ponta
           </h2>
-          <ul className="list-disc pl-4">
-            <li className="text-orange-500">
-              <p className="py-1 text-white">Campos de futebol</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">Ginásio Coberto com Quadra Polesportiva</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">Quadra de Tênis</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">2 Quadras de Vôlei de Areia</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">Pista de Skate</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">Piscina Semi olimpica (25m) com Seis Rais</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">Piscina de Hidroginástica</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">8 Áreas com Churrasqueira</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">Piscina infantil</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">Área de Lazer com Piscina para adultos</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">Playground</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">Pista de Cooper e Ciclovia (4km)</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">Lago</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">Salão de Jogos</p>
-            </li>
-            <li className="text-orange-500">
-              <p className="py-1 text-white">Quadra de Beach Tênis</p>
-            </li>
-          </ul>
+          <div className="grid grid-cols-2 gap-4">
+            <ul className="list-disc pl-4">
+              <li className="text-orange-500">
+                <p className="py-1 text-white">Campos de futebol</p>
+              </li>
+              <li className="text-orange-500">
+                <p className="py-1 text-white">Ginásio Coberto com Quadra Polesportiva</p>
+              </li>
+              <li className="text-orange-500">
+                <p className="py-1 text-white">Quadra de Tênis</p>
+              </li>
+              <li className="text-orange-500">
+                <p className="py-1 text-white">2 Quadras de Vôlei de Areia</p>
+              </li>
+              <li className="text-orange-500">
+                <p className="py-1 text-white">Pista de Skate</p>
+              </li>
+              <li className="text-orange-500">
+                <p className="py-1 text-white">Piscina Semi olimpica (25m) com Seis Rais</p>
+              </li>
+              <li className="text-orange-500">
+                <p className="py-1 text-white">Piscina de Hidroginástica</p>
+              </li>
+              <li className="text-orange-500">
+                <p className="py-1 text-white">8 Áreas com Churrasqueira</p>
+              </li>
+            </ul>
+            <ul className="list-disc pl-4">
+              <li className="text-orange-500">
+                <p className="py-1 text-white">Piscina infantil</p>
+              </li>
+              <li className="text-orange-500">
+                <p className="py-1 text-white">Área de Lazer com Piscina para adultos</p>
+              </li>
+              <li className="text-orange-500">
+                <p className="py-1 text-white">Playground</p>
+              </li>
+              <li className="text-orange-500">
+                <p className="py-1 text-white">Pista de Cooper e Ciclovia (4km)</p>
+              </li>
+              <li className="text-orange-500">
+                <p className="py-1 text-white">Lago</p>
+              </li>
+              <li className="text-orange-500">
+                <p className="py-1 text-white">Salão de Jogos</p>
+              </li>
+              <li className="text-orange-500">
+                <p className="py-1 text-white">Quadra de Beach Tênis</p>
+              </li>
+            </ul>
+          </div>
           <Image
             className="rounded"
-            src="/static/images/img68.jpg"
+            src="/static/images/img64.jpg"
             alt="avatar"
-            width="600px"
-            height="300px"
+            width="700px"
+            height="350px"
           />
         </div>
       </CustomModal>

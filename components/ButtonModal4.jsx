@@ -14,7 +14,7 @@ export default function ButtonModal() {
           className="icon-button"
           width={50}
           height={50}
-          src="/static/images/seguranca.jpg"
+          src="/static/images/casa.png"
           alt="Vercel Logo"
         />
         <h1 className="pb-4 font-extrabold">Comodidade</h1>
@@ -54,10 +54,10 @@ export default function ButtonModal() {
           </ul>
           <Image
             className="rounded"
-            src="/static/images/img68.jpg"
+            src="/static/images/saude-bem-estar.png"
             alt="avatar"
-            width="600px"
-            height="300px"
+            width="700px"
+            height="350px"
           />
         </div>
       </CustomModal>
