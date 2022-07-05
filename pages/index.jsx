@@ -1,5 +1,3 @@
-import { PageSEO } from '@/components/SEO'
-import siteMetadata from '@/data/siteMetadata'
 import Footer from '@/components/Footer'
 import CarouselBanners from '@/components/CarouselBanners'
 import ButtonModal from '@/components/ButtonModal'
@@ -9,11 +7,22 @@ import ButtonModal4 from '@/components/ButtonModal4'
 import ButtonModal5 from '@/components/ButtonModal5'
 import ButtonModal6 from '@/components/ButtonModal6'
 import Image from 'next/image'
+import Head from 'next/head'
 
 export default function Home({ posts }) {
   return (
     <>
-      <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
+      <Head>
+        <title>Village Cajueiro</title>
+        <meta
+          name="description"
+          content="Village Cajueiro - Projetado para você morar com qualidade de vida"
+        />
+        <meta name="keywords" content="Village, Cajueiro, Loteamento" />
+        <meta property="og:title" content="Village Cajueiro" />
+        <meta property="og:url" content="https://villagecajueiro.vercel.app/" />
+        <meta property="og:image" content="https://villagecajueiro.vercel.app/logo_text.png" />
+      </Head>
       <CarouselBanners />
       <div className="gap-4 p-6 md:grid md:grid-cols-2 md:p-10">
         <div>
@@ -169,7 +178,7 @@ export default function Home({ posts }) {
       </div>
       <div className="mx-auto max-w-7xl pt-8">
         <div className="space-y-2 p-2 pb-2 md:space-y-2">
-          <h1 className="text-center text-3xl font-extrabold leading-9 tracking-tight text-orange-500  dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-3xl md:leading-14">
+          <h1 className="text-center text-3xl font-extrabold leading-9 tracking-tight text-orange-500 sm:text-4xl sm:leading-10 md:text-3xl md:leading-14">
             GALERIA DE FOTOS
           </h1>
         </div>
