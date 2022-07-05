@@ -10,6 +10,8 @@ class MyDocument extends Document {
           <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="msapplication-TileColor" content="#000000" />
           <meta name="theme-color" content="#000000" />
+          <meta property="og:url" content="https://villagecajueiro.vercel.app/" />
+          <meta property="og:image" content="https://villagecajueiro.vercel.app/logo_text.png" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         </Head>
         <body className="bg-gray-900 text-white antialiased dark:bg-white dark:text-black">
